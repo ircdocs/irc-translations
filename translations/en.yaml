@@ -9,6 +9,18 @@
 # description explaining the value.
 
 
+# Language
+#
+# This section holds information about the actual language the values in this file are in.
+language:
+  # This is the short code for the given language, usually the standard ISO code for it.
+  code: en
+  # This is the full name of the language, in English.
+  name: English
+  # This is the full name of the language, in the native language itself.
+  native-name: English
+
+
 # Glossary
 glossary:
   irc:
