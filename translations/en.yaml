@@ -1,0 +1,82 @@
+# en IRC Language File
+#
+# This is considered the reference language file. Messages in here generally shouldn't be
+# copy-edited as they're the way they are due to historical reasons.
+#
+# The `tl-note` is a note specifically intended to help the translator understand what the
+# particular message means, or give some extra useful context while translating. It does not
+# and typically should not be translated, as it's intended to be the canonical English
+# description explaining the value.
+
+
+# Glossary
+glossary:
+  irc:
+    value: Internet Relay Chat (IRC)
+    tl-note: >
+      Internet Relay Chat (IRC) is a way to chat with text over the internet, similar to
+      Skype. However, you can run your own copy of IRC completely yourself, something you're
+      not able to do with Skype or similar hosted chat services.
+  
+  network:
+    value: Network
+    tl-note: >
+      An IRC network is an IRC service that someone's actually running. If someone's running
+      an IRC network, it means that two people can connect to their network and chat to each
+      other.
+
+  server:
+    value: Server
+    tl-note: >
+      An IRC server is a machine that runs am IRC server program. IRC networks are made of
+      one or more servers that connect to each other, and provide IRC services to the users
+      who connect to them.
+
+  client:
+    value: Client
+    tl-note: >
+      An IRC client is a person or a program connected to an IRC server/network. I can
+      easily download an IRC client program, connect to a network, and start chatting!
+  
+  channel:
+    value: Channel
+    tl-note: >
+      An IRC channel is a chat room. Each IRC network has many, many channels that clients
+      can connect to and chat with each other. For instance, if I connect to a chat room
+      called 'kittens', you could say I've joined the 'kittens' channel. Channel names in
+      IRC start with a hash symbol, so the kittens channel would be '#kittens'.
+
+
+# IRC Numerics
+#
+# Numerics are short strings presented to end users that either give them information, or
+# are a response to a command the user's performed on the chat network.
+numerics:
+  "001":
+    value: Welcome to the %=network=% IRC Network %=userhost=%
+    tl-note: >
+      This message is sent when the client connects, and introduces new users to the IRC
+      network. %=network=% is the name of the IRC network (e.g.  Freenode  ). %=userhost=%
+      is a user identifier that also contains some technical details about how they
+      connected (e.g.  dan!username@127.0.0.1  ).
+
+  "002":
+    value: Your host is %=servername=%, running version %=version=%
+    tl-note:
+      This message is sent when the client connects, and indicates the name of the server
+      that the user's connecting to (e.g.  irc.oragono.io  ) and what version of software
+      the server is running (e.g.  ircd-kawaii-1.2.4  ).
+
+  "003":
+    value: This server was created %=datetime=%
+    tl-note:
+      This message is sent when the client connects, and indicates the time and date when
+      the server was created (e.g.  Sat Jan 7 2017 at 12:04:42 EST  ).
+  
+  "005":
+    value: are supported by this server
+    tl-note: >
+      This message is sent when the client connects, and indicates that the list of tokens
+      before this sentence are what the server supports. For instance, this is an example of
+      what's usually sent by the server when a client connects:
+      CASEMAPPING=rfc1459 CHANLIMIT=#:120 CHANMODES=eimnprstz are supported by this server
