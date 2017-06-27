@@ -56,7 +56,8 @@ numerics:
     value: Welcome to the %=network=% IRC Network %=userhost=%
 
   "002":
-    # This message is sent when the client connects.
+    # This message is sent when the client connects, and gives users more information
+    # about the server they're connecting to.
     #   %=servername=% shows the name of the server that the user's connecting to
     #                   (e.g.  irc.oragono.io  ).
     #   %=version=% shows what version of software the server is running
@@ -64,7 +65,8 @@ numerics:
     value: Your host is %=servername=%, running version %=version=%
 
   "003":
-    # This message is sent when the client connects.
+    # This message is sent when the client connects, and tells them when the server was
+    # created (when it started running).
     #   %=datetime=% indicates the time and date when the server was created
     #                   (e.g.  Sat Jan 7 2017 at 12:04:42 EST  ).
     value: This server was created %=datetime=%
