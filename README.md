@@ -1,6 +1,6 @@
 # IRC Translations
 
-So, what is this? Basically, it can be difficult for server authors to introduce translations of standard IRC messages because... quite simply, they don't really exist. Sure, some foreign nets have their own custom IRCds, but being able to integrate alternate-language messages natively into regular IRC servers would be really useful.
+This project attempts to introduce standard, widely-usable translations of all the usual IRC numeric strings. Translations can be hard to implement for IRC server authors – mostly, because those translations don't exist. With this, I'm hoping to make available standard translations for numerics and messages that server authors can use while implementing translated messages for their users.
 
 I'm not sure whether this'll be useful or not, but hey! Hopefully it can let IRC server authors implement translated messages more easily than they'd otherwise be able to.
 
