@@ -87,5 +87,31 @@ numerics:
     # This message is sent when the client connects, and indicates that the list of tokens
     # before this sentence are what the server supports. For instance, this is an example of
     # what can be sent when a client connects:
-    #        CASEMP=rfc1459 CHANLIM=#:10 CHANMODES=eimprstz are supported by this server
+    #       CASEMP=rfc1459 CHANLIM=#:10 CHANMODES=eimprstz are supported by this server
     value: are supported by this server
+
+  "010":
+    # This message is sent to a client when they need to disconnect from the current server
+    # and connect to a different one instead. A port is an IP (internet) term describing a
+    # part of a server's internet address.
+    value: Please use this server/port instead
+
+  "251":
+    # This message tells the user how many other clients are on the network, and how many
+    # servers the network is made up of. ucount plus icount make up the total number of
+    # users who are on the network.
+    #   %=ucount=% are how many regular, non-invisible users are connected to the network.
+    #   %=icount=% are how many invisible users are connected to the network (e.g.  354  ).
+    #   %=scount=% are how many servers make up the network (e.g.  12  ).
+    value: There are %=ucount=% users and %=icount=% invisible on %=scount=% servers
+
+  "252":
+    # This message tells the user how many priveledged users (administrators) exist on the
+    # network. Typically, IRC admins are called 'operators'. For instance, the usual way
+    # this message is sent is something like:
+    #       0 operator(s) online
+    # or
+    #       1 operator(s) online
+    # or
+    #       31 operator(s) online
+    value: operator(s) online
